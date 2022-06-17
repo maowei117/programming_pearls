@@ -6,3 +6,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin")
 
 
 add_executable("2_3" src/2_3.cpp)
+add_executable("gcb" src/gcd.cpp)

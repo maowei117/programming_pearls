@@ -1,6 +1,18 @@
 #include <stdio.h>
 
+int gcd(int a, int b) {
+    if (a == 0 || b == 0) { return 0; }
+    while (true) {
+        a %= b;
+        if (a == 0) { return b; }
+
+        b %= a;
+        if (b == 0) { return a;}
+    }
+}
+
 bool left_rorate_shift(char* a, int n, int i) {
+    /*
     char temp = '\0';
 
     int round = n / i;
@@ -11,7 +23,7 @@ bool left_rorate_shift(char* a, int n, int i) {
         // Move a[index + k * i] -> a[index + (k - 1) * i];
         // Stop when (index + k * i) % n == index
     }
-
+    */
     return true;
 }
 
